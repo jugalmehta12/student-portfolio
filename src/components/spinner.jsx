@@ -1,6 +1,6 @@
 function Spinner() {
   return (
-    <div className="spinner">
+    <div style={{ textAlign: "center", padding: "40px" }}>
       <h2>Loading...</h2>
     </div>
   );
