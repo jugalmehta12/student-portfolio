@@ -26,7 +26,7 @@ function Contact() {
             <div className="contact-icon">&#9873;</div>
             <div>
               <div className="detail-label">Location</div>
-              <div className="detail-value">Anand, Gujarat, India</div>
+              <div className="detail-value">Kutch, Gujarat, India</div>
             </div>
           </div>
         </div>
