@@ -1,4 +1,9 @@
+import { useState } from "react";
+
 function Contact() {
+  const [message, setMessage] = useState("");
+  const [showHelp, setShowHelp] = useState(false);
+
   return (
     <div className="contact-container">
       <div className="contact-info">
@@ -26,12 +31,12 @@ function Contact() {
             <div className="contact-icon">&#9873;</div>
             <div>
               <div className="detail-label">Location</div>
-              <div className="detail-value">Kutch, Gujarat, India</div>
+            <div className="detail-value">Ahmedabad, Gujarat, India</div>
             </div>
           </div>
         </div>
       </div>
-      <form className="contact-form" onSubmit={(e) => { e.preventDefault(); alert("Message sent successfully!"); e.target.reset(); }}>
+      <form className="contact-form" onSubmit={(e) => { e.preventDefault(); alert("Message sent successfully!"); setMessage(""); }}>
         <div className="form-group">
           <label htmlFor="name">Your Name</label>
           <input type="text" id="name" placeholder="John Doe" required />
@@ -46,8 +51,19 @@ function Contact() {
         </div>
         <div className="form-group">
           <label htmlFor="message">Message</label>
-          <textarea id="message" placeholder="Write your message here..." required />
+          <textarea
+            id="message"
+            placeholder="Write your message here..."
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
+          />
+          <small>{message.length} characters</small>
         </div>
+        <button type="button" className="help-toggle" onClick={() => setShowHelp((visible) => !visible)}>
+          {showHelp ? "Hide message help" : "Show message help"}
+        </button>
+        {showHelp && <p className="form-help">Briefly introduce yourself and describe your query.</p>}
         <button type="submit" className="form-submit">Send Message</button>
       </form>
     </div>

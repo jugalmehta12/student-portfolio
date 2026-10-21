@@ -1,8 +1,8 @@
 function Header({ name, color }) {
   return (
-    <header style={{ backgroundColor: color }}>
-      <h1>{name}</h1>
-      <p>Advanced Web Development Portfolio</p>
+    <header className="portfolio-header" style={{ borderColor: color }}>
+      <p>Advanced Web Development Frameworks</p>
+      <h1>{name}'s Portfolio</h1>
     </header>
   );
 }

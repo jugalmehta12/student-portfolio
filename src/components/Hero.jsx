@@ -6,11 +6,11 @@ function Hero() {
       <div className="hero-text">
         <p className="greeting">Hello, I'm</p>
         <h1>Jugal Mehta</h1>
-        <h2>CyberSecurity Enthusiast</h2>
+        <h2>Software Development & Cybersecurity</h2>
         <p>
-          Computer Engineering student passionate about building modern,
-          responsive and user-friendly web applications using React and
-          JavaScript.
+          Computer Science & Engineering undergraduate at CHARUSAT with
+          experience in full-stack development, secure REST APIs, and
+          cybersecurity-oriented applications.
         </p>
         <div className="hero-buttons">
           <Link to="/projects">

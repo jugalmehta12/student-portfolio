@@ -3,14 +3,14 @@ function About() {
     <div className="about-content">
       <div className="about-text">
         <p>
-          I'm a Computer Science & Engineering student with a strong interest in
-          Frontend Development, React, JavaScript and UI Design.
-          I enjoy building clean, responsive and modern web applications.
+          I'm a Computer Science & Engineering student at CHARUSAT with a
+          growing focus on software engineering, cybersecurity, and ethical
+          hacking. I enjoy building secure, responsive web applications.
         </p>
         <p>
-          With a keen eye for detail and a passion for creating seamless
-          user experiences, I strive to write clean, efficient code that
-          makes a difference.
+          My work includes REST APIs, databases, JWT authentication, and
+          real-time systems. I strive to write clean, maintainable code that
+          solves practical problems.
         </p>
         <div className="about-info">
           <div className="about-info-item">
@@ -23,7 +23,7 @@ function About() {
           </div>
           <div className="about-info-item">
             <div className="label">Location</div>
-            <div className="value">Kutch, Gujarat</div>
+            <div className="value">Ahmedabad, Gujarat</div>
           </div>
           <div className="about-info-item">
             <div className="label">Education</div>

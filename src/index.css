@@ -70,6 +70,22 @@ a {
   padding: 120px 8% 60px;
 }
 
+.portfolio-header {
+  border-left: 4px solid;
+  margin-bottom: 42px;
+  padding: 8px 16px;
+}
+
+.portfolio-header p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.portfolio-header h1 {
+  color: #0f172a;
+  font-size: 24px;
+}
+
 /* Hero */
 .hero {
   display: flex;
@@ -466,6 +482,20 @@ a {
   background: #1d4ed8;
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.help-toggle {
+  border: 0;
+  background: transparent;
+  color: #2563eb;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.form-help,
+.form-group small {
+  color: #64748b;
+  font-size: 12px;
 }
 
 /* Footer */
